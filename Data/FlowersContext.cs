@@ -8,8 +8,6 @@ namespace flowers.api.Data
     {
         public DbSet<Flower> Flowers { get; set; }
         public DbSet<Family> Families { get; set; }
-        public FlowersContext(DbContextOptions options) : base(options)
-        {
-        }
+        public FlowersContext(DbContextOptions options) : base(options) { }
     }
 }

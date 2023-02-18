@@ -18,6 +18,26 @@ builder.Services.AddDbContext<FlowersContext>(options =>
 
 var app = builder.Build();
 
+//Load DB
+
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+
+try
+{
+    var context = services.GetRequiredService<FlowersContext>();
+
+    await context.Database.MigrateAsync();
+    await SeedData.LoadFamilies(context);
+    await SeedData.LoadFlowers(context);
+
+}
+catch(Exception e) 
+{
+    Console.WriteLine(e.Message);
+    throw;
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

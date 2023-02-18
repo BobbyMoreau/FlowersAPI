@@ -1757,11 +1757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj",
+      "projectUniqueName": "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj",
       "projectName": "flowers.api",
-      "projectPath": "c:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj",
+      "projectPath": "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj",
       "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\obj\\",
+      "outputPath": "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1771,6 +1771,7 @@
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
