@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace flowers.api.Entities
 {
-    public class Flower
+    public class Flower : BaseEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
         public string Color { get; set; }   
         public int Height { get; set; }
         public int FamilyId { get; set; }
