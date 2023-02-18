@@ -21,7 +21,14 @@ namespace flowers.api.Controllers
         [HttpGet()] // http://localhost:5000/api/flowers
         public async Task<IActionResult> ListAll()
         {
-            var result = await _context.Flowers.ToListAsync();
+            var result = await _context.Flowers
+            .Select(f => new{
+                Id = f.Id,
+                Name = f.Name,
+                Height = f.Height,
+                Color = f.Color
+            })
+            .ToListAsync();
 
             return Ok(result);
         }
