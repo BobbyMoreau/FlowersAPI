@@ -5,78 +5,87 @@
     "name": "ACROCLINIUM GRANDIFLORUM",
     "color" : "peach",
     "height": 50,
-    "familyId": 1
+    "familyId": 1,
+    "imageUrl": "flower1.png"
     },
     {
     "id": 2,
     "name": "ACHILLEA MILLEFOLIUM",
     "color" : "cerise",
     "height": 50,
-    "familyId": 2
+    "familyId": 2,
+    "imageUrl": "flower2.png"
     },
     {
     "id": 3,
     "name": "AMARANTHUS CAUDATUS",
     "color" : "red",
     "height": 90,
-    "familyId": 3
+    "familyId": 3,
+    "imageUrl": "flower3.png"
     },
     {
     "id": 4,
     "name": "AMBERBOA MOSCHATA",
     "color" : "white/pink",
     "height": 60,
-    "familyId": 2
+    "familyId": 2,
+    "imageUrl": "flower4.png"
     },
     {
     "id": 5,
     "name": "HELICHRYSUM BRACTEATUM",
     "color" : "brightorange",
     "height": 100,
-    "familyId": 2
+    "familyId": 2,
+    "imageUrl": "flower5.png"
     },
     {
     "id": 6,
     "name": "ANTIRRHINUM MAJUS MAXIMUM",
     "color" : "pastel",
     "height": 90,
-    "familyId": 4
+    "familyId": 4,
+    "imageUrl": "flower6.png"
     },
     {
     "id": 7,
     "name": "ASTER ALPINUS",
     "color" : "white",
     "height": 30,
-    "familyId": 1
+    "familyId": 1,
+    "imageUrl": "flower7.png"
     },
     {
     "id": 8,
     "name": "ESCHSCHOLZIA CALIFORNICA",
     "color" : "red",
     "height": 100,
-    "familyId": 5
+    "familyId": 5,
+    "imageUrl": "flower8.png"
     },
     {
     "id": 9,
     "name": "ADONIS AESTIVALIS",
     "color" : "red",
     "height": 30,
-    "familyId": 6
+    "familyId": 6,
+    "imageUrl": "flower9.png"
     },
     {
     "id": 10,
     "name": "AQUILEGIA VULGARIS",
     "color" : "purple",
     "height": 60,
-    "familyId": 6
+    "familyId": 6,
+    "imageUrl": "flower10.png"
     },
     {
     "id": 11,
     "name": "PAEONIA OFFICINALIS BANATICA",
     "color" : "pink",
     "height": 60,
-    "familyId": 6
+    "familyId": 6,
+    "imageUrl": "flower11.png"
     }
-    
-    
     ]

@@ -11,6 +11,7 @@ namespace flowers.api.Entities
         public string Color { get; set; }   
         public int Height { get; set; }
         public int FamilyId { get; set; }
+        public string ImageUrl { get; set; }
 
         [ForeignKey("FamilyId")]
         public Family Family { get; set; }
