@@ -26,8 +26,7 @@ namespace flowers.api.Controllers
                 Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
-                Color = f.Color,
-                ImageUrl = f.ImageUrl
+                Color = f.Color
             })
             .ToListAsync();
 
@@ -39,11 +38,11 @@ namespace flowers.api.Controllers
         {
             var result = await _context.Flowers
             .Select(f => new{
+                Id = f.Id,
                 Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
-                Color = f.Color,
-                ImageUrl = f.ImageUrl
+                Color = f.Color
             })
             .SingleOrDefaultAsync(c => c.Id == id);
 
