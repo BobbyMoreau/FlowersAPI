@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj": {}
+    "C:\\Users\\camil\\Desktop\\skolan\\API\\Flowers\\flowers.api\\flowers.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj": {
+    "C:\\Users\\camil\\Desktop\\skolan\\API\\Flowers\\flowers.api\\flowers.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj",
+        "projectUniqueName": "C:\\Users\\camil\\Desktop\\skolan\\API\\Flowers\\flowers.api\\flowers.api.csproj",
         "projectName": "flowers.api",
-        "projectPath": "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\flowers.api.csproj",
+        "projectPath": "C:\\Users\\camil\\Desktop\\skolan\\API\\Flowers\\flowers.api\\flowers.api.csproj",
         "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\camil\\desktop\\skolan\\API\\flowers.api\\obj\\",
+        "outputPath": "C:\\Users\\camil\\Desktop\\skolan\\API\\Flowers\\flowers.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",

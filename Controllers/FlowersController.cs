@@ -23,10 +23,11 @@ namespace flowers.api.Controllers
         {
             var result = await _context.Flowers
             .Select(f => new{
-                Id = f.Id,
+                Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
-                Color = f.Color
+                Color = f.Color,
+                ImageUrl = f.ImageUrl
             })
             .ToListAsync();
 
@@ -36,7 +37,15 @@ namespace flowers.api.Controllers
         [HttpGet("{id}")] // http://localhost:5000/api/flowers
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _context.Flowers.FindAsync(id);
+            var result = await _context.Flowers
+            .Select(f => new{
+                Family = f.Family.Name,
+                Name = f.Name,
+                Height = f.Height,
+                Color = f.Color,
+                ImageUrl = f.ImageUrl
+            })
+            .SingleOrDefaultAsync(c => c.Id == id);
 
             return Ok(result);
         }
