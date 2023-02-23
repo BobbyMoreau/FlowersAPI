@@ -64,15 +64,19 @@ namespace flowers.api.Controllers
             return Ok(result);
         }
 
+
+        
+
         [HttpPost]
         public async Task<IActionResult> Add(FlowerPostView flower)
         {
+            if(!ModelState.IsValid) {return ValidationProblem();}
             
             if(await _context.Flowers.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Name.ToUpper()) is not null){
                 return BadRequest($"The flower {flower.Name} allready exist");
             }
 
-            var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Name.ToUpper());
+            var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name == flower.Family);
             if(fam is null) return NotFound($"Sorry, We couldn't find {flower.Family} ");
 
             var newFlower = new Flower{
@@ -83,7 +87,20 @@ namespace flowers.api.Controllers
                 
 
             };
-            return StatusCode(201);
+
+            try 
+            {
+            await _context.Flowers.AddAsync(newFlower);
+            if (await _context.SaveChangesAsync() > 0) { return StatusCode(201); }
+            }
+            catch (Exception e) 
+            {    
+                Console.WriteLine(e.Message);               
+            }
+
+
+            return StatusCode(500, "Internal Server Error");
+            
         }
         
         // private async Task<List<FlowerListView>> CreateList()
