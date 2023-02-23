@@ -91,7 +91,18 @@ namespace flowers.api.Controllers
             try 
             {
             await _context.Flowers.AddAsync(newFlower);
-            if (await _context.SaveChangesAsync() > 0) { return StatusCode(201); }
+            if (await _context.SaveChangesAsync() > 0) 
+            { 
+                return CreatedAtAction(nameof(GetByName), new{name=newFlower.Name},
+                new 
+                {
+                    Id = newFlower.Id,
+                    Family = newFlower.Family.Name,
+                    Name = newFlower.Name,
+                    Height = newFlower.Height,
+                    Color = newFlower.Color
+                });
+            }
             }
             catch (Exception e) 
             {    
