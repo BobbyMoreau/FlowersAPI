@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using flowers.api.Data;
+using flowers.api.Entities;
+using flowers.api.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +24,7 @@ namespace flowers.api.Controllers
         public async Task<IActionResult> ListAll()
         {
             var result = await _context.Flowers
+            .OrderBy(f => f.Name)
             .Select(f => new{
                 Family = f.Family.Name,
                 Name = f.Name,
@@ -61,6 +64,41 @@ namespace flowers.api.Controllers
             return Ok(result);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Add(FlowerPostView flower)
+        {
+            
+            if(await _context.Flowers.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Name.ToUpper()) is not null){
+                return BadRequest($"The flower {flower.Name} allready exist");
+            }
+
+            var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Name.ToUpper());
+            if(fam is null) return NotFound($"Sorry, We couldn't find {flower.Family} ");
+
+            var newFlower = new Flower{
+                Name = flower.Name,
+                Family = fam,
+                Color = flower.Color,
+                Height = flower.Height
+                
+
+            };
+            return StatusCode(201);
+        }
+        
+        // private async Task<List<FlowerListView>> CreateList()
+        // {
+        //         var flowers = await _context.Flowers
+        //         .OrderBy(f => f.Name)
+        //         .Select(b => new FlowerListView
+        //         {
+        //             Id = b.Id,
+        //             Name = b.Name
+        //         })
+        //         .ToListAsync();
+
+        //     return flowers;
+        // }
         
     }
 }
