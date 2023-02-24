@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using flowers.api.Data;
 using flowers.api.Entities;
 using flowers.api.ViewModels;
@@ -15,12 +11,16 @@ namespace flowers.api.Controllers
     public class FlowersController : ControllerBase
     {
         private readonly FlowersContext _context;
-        public FlowersController(FlowersContext context)
-        {          
+        private readonly string _imageBaseUrl;
+        private readonly IConfiguration _config;
+        public FlowersController(FlowersContext context, IConfiguration config)
+        {         
+            _config = config; 
             _context = context;
+            _imageBaseUrl = _config.GetSection("apiImageUrl").Value;
         }
 
-        [HttpGet()] // http://localhost:5000/api/flowers
+        [HttpGet()] // http://localhost:4000/api/flowers
         public async Task<IActionResult> ListAll()
         {
             var result = await _context.Flowers
@@ -29,14 +29,15 @@ namespace flowers.api.Controllers
                 Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
-                Color = f.Color
+                Color = f.Color,
+                ImageUrl = _imageBaseUrl + f.ImageUrl ?? "field.png"
             })
             .ToListAsync();
 
             return Ok(result);
         }
 
-        [HttpGet("{id}")] // http://localhost:5000/api/flowers
+        [HttpGet("{id}")] // http://localhost:4000/api/flowers
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _context.Flowers
@@ -83,8 +84,8 @@ namespace flowers.api.Controllers
                 Name = flower.Name,
                 Family = fam,
                 Color = flower.Color,
-                Height = flower.Height
-                
+                Height = flower.Height,
+                ImageUrl = "flowers.png"
 
             };
 

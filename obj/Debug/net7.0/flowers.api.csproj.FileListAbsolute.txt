@@ -140,3 +140,4 @@ C:\Users\camil\Desktop\skolan\API\Flowers\flowers.api\obj\Debug\net7.0\refint\fl
 C:\Users\camil\Desktop\skolan\API\Flowers\flowers.api\obj\Debug\net7.0\flowers.api.pdb
 C:\Users\camil\Desktop\skolan\API\Flowers\flowers.api\obj\Debug\net7.0\flowers.api.genruntimeconfig.cache
 C:\Users\camil\Desktop\skolan\API\Flowers\flowers.api\obj\Debug\net7.0\ref\flowers.api.dll
+C:\Users\camil\desktop\skolan\API\Flowers\flowers.api\bin\Debug\net7.0\flowers.api.staticwebassets.runtime.json

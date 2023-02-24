@@ -4,12 +4,21 @@ using Microsoft.EntityFrameworkCore;
 
 namespace flowers.api.Controllers
 {
+    [ApiController]
+    [Route("api/family")]
     public class FamilyController: ControllerBase
     {
          private readonly FlowersContext _context;
         public FamilyController(FlowersContext context)
         {          
             _context = context;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ListAll()
+        {
+            var result = await _context.Families.ToListAsync();
+            return Ok(result);
         }
         [HttpGet("{name}/flowers")]
 
