@@ -46,7 +46,8 @@ namespace flowers.api.Controllers
                 Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
-                Color = f.Color
+                Color = f.Color,
+                ImageUrl = _imageBaseUrl + f.ImageUrl ?? "field.png"
             })
             .SingleOrDefaultAsync(c => c.Id == id);
 
@@ -68,8 +69,8 @@ namespace flowers.api.Controllers
 
         
 
-        [HttpPost]
-        public async Task<IActionResult> Add(FlowerPostView flower)
+        [HttpPost()]
+        public async Task<IActionResult> Create(FlowerPostView flower)
         {
             if(!ModelState.IsValid) {return ValidationProblem();}
             
@@ -77,7 +78,7 @@ namespace flowers.api.Controllers
                 return BadRequest($"The flower {flower.Name} allready exist");
             }
 
-            var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name == flower.Family);
+            var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Family.ToUpper());
             if(fam is null) return NotFound($"Sorry, We couldn't find {flower.Family} ");
 
             var newFlower = new Flower{
@@ -101,7 +102,8 @@ namespace flowers.api.Controllers
                     Family = newFlower.Family.Name,
                     Name = newFlower.Name,
                     Height = newFlower.Height,
-                    Color = newFlower.Color
+                    Color = newFlower.Color,
+                    ImageUrl = newFlower.ImageUrl
                 });
             }
             }

@@ -5,11 +5,13 @@ using Microsoft.EntityFrameworkCore;
 namespace flowers.api.Controllers
 {
     [ApiController]
-    [Route("api/family")]
-    public class FamilyController: ControllerBase
+    [Route("api/families")]
+
+    public class FamiliesController : ControllerBase
     {
-         private readonly FlowersContext _context;
-        public FamilyController(FlowersContext context)
+    
+        private readonly FlowersContext _context;
+        public FamiliesController(FlowersContext context)
         {          
             _context = context;
         }
@@ -37,6 +39,5 @@ namespace flowers.api.Controllers
 
             return Ok(result);
         }
-
     }
 }
