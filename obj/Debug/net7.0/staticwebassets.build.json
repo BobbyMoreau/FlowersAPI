@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S94HaukU2vt+4EWoqqg5S2ll7sWO3GRF75nyjQqXI0M=",
+  "Hash": "QHhm+KrDfYGbgmEZ4X+fmuYJHrIvBmbwyOsXeVX0tU0=",
   "Source": "flowers.api",
   "BasePath": "_content/flowers.api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "flowers.api\\wwwroot",
       "Source": "flowers.api",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\field.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\field.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/field.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\field.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\field2.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\field2.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/field2.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\images\\field2.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\field3.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\field3.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/field3.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\images\\field3.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower1.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower1.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower1.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower1.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower10.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower10.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower10.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower10.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower11.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower11.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower11.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower11.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower2.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower2.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower2.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower2.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower3.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower3.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower3.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower3.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower4.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower4.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower4.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower4.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower5.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower5.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower5.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower5.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower6.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower6.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower6.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower6.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower7.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower7.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower7.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower7.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower8.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower8.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower8.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower8.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flower9.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flower9.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flower9.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flower9.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\flowers.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\flowers.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/flowers.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flowers.png"
     },
     {
-      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\images\\landing.png",
+      "Identity": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\images\\landing.png",
       "SourceId": "flowers.api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\flowers\\flowers.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\camil\\desktop\\skolan\\api\\Flowers\\flowers.api\\wwwroot\\",
       "BasePath": "_content/flowers.api",
       "RelativePath": "images/landing.png",
       "AssetKind": "All",

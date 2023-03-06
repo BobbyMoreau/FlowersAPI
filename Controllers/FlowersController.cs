@@ -70,7 +70,7 @@ namespace flowers.api.Controllers
         
 
         [HttpPost()]
-        public async Task<IActionResult> Create(FlowerPostView flower)
+        public async Task<IActionResult> Add(FlowerPostView flower)
         {
             if(!ModelState.IsValid) {return ValidationProblem();}
             
@@ -95,7 +95,7 @@ namespace flowers.api.Controllers
             await _context.Flowers.AddAsync(newFlower);
             if (await _context.SaveChangesAsync() > 0) 
             { 
-                return CreatedAtAction(nameof(GetByName), new{name=newFlower.Name},
+                return CreatedAtAction(nameof(GetById), new{id = newFlower.Id},
                 new 
                 {
                     Id = newFlower.Id,

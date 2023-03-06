@@ -22,6 +22,16 @@ namespace flowers.api.Controllers
             var result = await _context.Families.ToListAsync();
             return Ok(result);
         }
+
+        [HttpGet("{id}")] 
+        public async Task<IActionResult> GetById(int id)
+        {
+            var result = await _context.Families.FindAsync(id);
+
+            return Ok(result);
+        }
+
+
         [HttpGet("{name}/flowers")]
 
         public async Task<IActionResult> ListFlowersInThisFamily(string name)

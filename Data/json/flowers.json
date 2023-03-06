@@ -1,9 +1,8 @@
 [
-
     {
     "id": 1,
     "name": "ACROCLINIUM GRANDIFLORUM",
-    "color" : "peach",
+    "color": "peach",
     "height": 50,
     "familyId": 1,
     "imageUrl": "flower1.png"
