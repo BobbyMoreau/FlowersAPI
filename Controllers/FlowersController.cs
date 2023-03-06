@@ -70,7 +70,7 @@ namespace flowers.api.Controllers
         
 
         [HttpPost()]
-        public async Task<IActionResult> Add(FlowerPostView flower)
+        public async Task<IActionResult> Create(FlowerPostView flower)
         {
             if(!ModelState.IsValid) {return ValidationProblem();}
             
@@ -78,12 +78,12 @@ namespace flowers.api.Controllers
                 return BadRequest($"The flower {flower.Name} allready exist");
             }
 
-            var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Family.ToUpper());
-            if(fam is null) return NotFound($"Sorry, We couldn't find {flower.Family} ");
+            // var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Family.ToUpper());
+            // if(fam is null) return NotFound($"Sorry, We couldn't find {flower.Family} ");
 
             var newFlower = new Flower{
                 Name = flower.Name,
-                Family = fam,
+                //Family = fam,
                 Color = flower.Color,
                 Height = flower.Height,
                 ImageUrl = "flowers.png"
@@ -99,7 +99,7 @@ namespace flowers.api.Controllers
                 new 
                 {
                     Id = newFlower.Id,
-                    Family = newFlower.Family.Name,
+                    //Family = newFlower.Family.Name,
                     Name = newFlower.Name,
                     Height = newFlower.Height,
                     Color = newFlower.Color,
@@ -117,19 +117,19 @@ namespace flowers.api.Controllers
             
         }
         
-        // private async Task<List<FlowerListView>> CreateList()
-        // {
-        //         var flowers = await _context.Flowers
-        //         .OrderBy(f => f.Name)
-        //         .Select(b => new FlowerListView
-        //         {
-        //             Id = b.Id,
-        //             Name = b.Name
-        //         })
-        //         .ToListAsync();
+        private async Task<List<FlowerListView>> CreateList()
+        {
+                var flowers = await _context.Flowers
+                .OrderBy(f => f.Name)
+                .Select(b => new FlowerListView
+                {
+                    Id = b.Id,
+                    Name = b.Name
+                 })
+                 .ToListAsync();
 
-        //     return flowers;
-        // }
+           return flowers;
+         }
         
     }
 }

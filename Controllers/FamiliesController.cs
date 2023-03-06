@@ -1,4 +1,6 @@
 using flowers.api.Data;
+using flowers.api.Entities;
+using flowers.api.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,9 +13,12 @@ namespace flowers.api.Controllers
     {
     
         private readonly FlowersContext _context;
-        public FamiliesController(FlowersContext context)
+
+        private readonly IConfiguration _config;
+        public FamiliesController(FlowersContext context, IConfiguration config)
         {          
             _context = context;
+            _config = config; 
         }
 
         [HttpGet]
