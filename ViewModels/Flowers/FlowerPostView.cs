@@ -15,6 +15,6 @@ namespace flowers.api.ViewModels
         
         [Required(ErrorMessage = "You have to choose the flowers family")]
         public int FamilyId { get; set; }
-        //public string Family { get; set;}
+        public string Family { get; set;}
     }
 }

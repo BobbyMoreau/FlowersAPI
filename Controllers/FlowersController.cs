@@ -44,7 +44,7 @@ namespace flowers.api.Controllers
             var result = await _context.Flowers
             .Select(f => new{
                 Id = f.Id,
-                //Family = f.Family.Name,
+                Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
                 Color = f.Color,
@@ -79,12 +79,12 @@ namespace flowers.api.Controllers
                 return BadRequest($"The flower {flowers.Name} allready exist");
             }
 
-            // var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flower.Family.ToUpper());
-            // if(fam is null) return NotFound($"Sorry, We couldn't find {flower.Family} ");
+             var fam = await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == flowers.Family.ToUpper());
+             if(fam is null) return NotFound($"Sorry, We couldn't find {flowers.Family} ");
 
             var newFlower = new Flower{
                 Name = flowers.Name,
-                //Family = fam,
+                Family = fam,
                 FamilyId = flowers.FamilyId,
                 Color = flowers.Color,
                 Height = flowers.Height,
@@ -101,7 +101,7 @@ namespace flowers.api.Controllers
                 new 
                 {
                     Id = newFlower.Id,
-                    //Family = newFlower.Family.Name,
+                    Family = newFlower.Family.Name,
                     FamilyId = newFlower.FamilyId,
                     Name = newFlower.Name,
                     Height = newFlower.Height,

@@ -7,8 +7,7 @@ namespace flowers.api.ViewModels
 {
     public class BaseViewModel
     {
-        // [Required()]
-        // [DisplayName("Name")]
+
         public string Name { get; set; }
     }
 }
