@@ -26,6 +26,7 @@ namespace flowers.api.Controllers
             var result = await _context.Flowers
             .OrderBy(f => f.Name)
             .Select(f => new{
+                Id = f.Id,
                 Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
@@ -43,7 +44,7 @@ namespace flowers.api.Controllers
             var result = await _context.Flowers
             .Select(f => new{
                 Id = f.Id,
-                Family = f.Family.Name,
+                //Family = f.Family.Name,
                 Name = f.Name,
                 Height = f.Height,
                 Color = f.Color,
