@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace flowers.api.ViewModels
+namespace flowers.api.ViewModels.Families
 {
-    public class BaseViewModel
+    public class FamilyPostView : BaseViewModel
     {
-        public string Name { get; set; }
+        
     }
 }

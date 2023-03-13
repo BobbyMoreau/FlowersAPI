@@ -1,6 +1,7 @@
 using flowers.api.Data;
 using flowers.api.Entities;
 using flowers.api.ViewModels;
+using flowers.api.ViewModels.Families;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -54,5 +55,46 @@ namespace flowers.api.Controllers
 
             return Ok(result);
         }
+
+
+        [HttpPost()]
+        public async Task<IActionResult> Add([FromBody]FamilyPostView family)
+        {
+            if(!ModelState.IsValid) return BadRequest("No I need comlete information.");
+            
+            if(await _context.Families.SingleOrDefaultAsync(f => f.Name.ToUpper() == family.Name.ToUpper()) is not null){
+                return BadRequest($"The flower {family.Name} allready exist");
+            }
+
+             
+            var newFamily = new Family{
+                Name = family.Name,
+
+            };
+
+            try 
+            {
+            await _context.Families.AddAsync(newFamily);
+            if (await _context.SaveChangesAsync() > 0) 
+            { 
+                return CreatedAtAction(nameof(GetById), new{id = newFamily.Id},
+                new 
+                {
+  
+                    Name = newFamily.Name,
+
+                });
+            }
+            }
+            catch (Exception e) 
+            {    
+                Console.WriteLine(e.Message);               
+            }
+
+
+            return StatusCode(500, "Internal Server Error");
+            
+        }
+
     }
 }
