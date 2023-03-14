@@ -20,7 +20,7 @@ namespace flowers.api.Controllers
             _imageBaseUrl = _config.GetSection("apiImageUrl").Value;
         }
 
-        [HttpGet()] // http://localhost:4000/api/flowers
+        [HttpGet()] 
         public async Task<IActionResult> ListAll()
         {
             var result = await _context.Flowers
@@ -38,7 +38,7 @@ namespace flowers.api.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")] // http://localhost:4000/api/flowers
+        [HttpGet("{id}")] 
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _context.Flowers
@@ -55,9 +55,6 @@ namespace flowers.api.Controllers
             return Ok(result);
         }
 
-
-        //Space in URL - hov to remove?
-        // Did not work = _context.Flowers.SingleOrDefaultAsync(c => c.Name.Trim() == name.Trim());
         [HttpGet("Name/{name}")] 
         public async Task<IActionResult> GetByName(string name)
         {

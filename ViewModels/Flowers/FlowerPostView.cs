@@ -6,8 +6,6 @@ namespace flowers.api.ViewModels
 {
     public class FlowerPostView : BaseViewModel
     {
-        // [Required(ErrorMessage = "You have to write the flowers name")]
-        // public string Name {get; set;}
         [Required(ErrorMessage = "You have to write the flowers color")]
         public string Color { get; set; }  
         [Required(ErrorMessage = "You have to write the flowers height")] 
